@@ -7,10 +7,10 @@ metadata:
 spec:
   chart:
     spec:
-      chart: ./helm
+      chart: nest-flux-kind
       reconcileStrategy: ChartVersion
       sourceRef:
-        kind: GitRepository
+        kind: HelmRepository
         name: nest-flux-kind
-  interval: 1m0s
-  targetNamespace: default
+      version: '>=1.0.0'
+  interval: 5m0s
